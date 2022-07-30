@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- This is how to link a css file to an html file -->
+
+    <title>Introduction to CSS</title>
+  </head>
+  <body>
+    <h1>Introduction to CSS</h1>
+    <a style="font-size: larger" href="assignment.html">Assignment Here</a>
+    <div>
+      <h2>Classes</h2>
+      <p>This is no a default paragraph</p>
+      <p class="class1">This is class 1</p>
+      <p class="class2">This is class 2</p>
+      <p class="class1 class3">This is class 1 and 3</p>
+    </div>
+
+    <div>
+      <h2>IDs</h2>
+      <p id="id1">This paragraph has 'id1'</p>
+      <p id="id2">This paragraph has 'id2'</p>
+    </div>
+
+    <div>
+      <h2>Grouping Selectors</h2>
+      <p class="paragraph">Paragraph 1</p>
+      <p class="paragraph-italicized">Paragraph 1</p>
+    </div>
+
+    <div>
+      <h2>Chaining Selectors</h2>
+      <p class="paragraph paragraph-italicized">
+        The font here is Arial and the color is red because the classes are
+        chained together
+      </p>
+      <p class="paragraph paragraph-italicized">
+        The attributes chosen cascade until the last one; since
+        paragraph-italicized is the last one in the chain, this paragraph
+        inherits its font family
+      </p>
+      <p id="id1" class="paragraph">
+        This paragraph chains the paragraph into an id
+      </p>
+    </div>
+
+    <div>
+      <h2>Descendant Combinators</h2>
+      <ul class="ancestor">
+        <li class="child">Child nested inside of ancestor</li>
+      </ul>
+      <li class="child">Child not nested at all</li>
+
+      <div class="one">
+        <div class="two">
+          <div class="three">
+            <div class="four">Testing depth 1-2-3-4</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="one">
+        <div class="two">
+          <div class="three">Testing depth of 1-2-3</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Specificity</h2>
+      <p>
+        With CSS, there is an ordering, based on selectors, to which style is
+        applied.
+      </p>
+      <ol>
+        <li>Inline</li>
+        <li>ID</li>
+        <li>Class</li>
+        <li>Type</li>
+      </ol>
+      <p>
+        This is a sort of tiebreaker for <strong>conflicts</strong>, and 'rules'
+        with more selectors will take precedence over ones with less.
+      </p>
+      <p>
+        If there are equal number of inline, then ID is checked; if there are an
+        equal number of ID, then class is checked; if there are more class
+        selectors in one rule than another, then the majority wins.
+      </p>
+    </div>
+  </body>
+</html>

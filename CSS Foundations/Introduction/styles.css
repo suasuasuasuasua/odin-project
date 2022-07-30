@@ -1,0 +1,91 @@
+/* This is an example of a universal selector using the asterisk */
+* {
+  color: black; /* 'color' is the attribute, while 'black' is the value */
+}
+
+/* This is a type selector because a specific element is chosen */
+div {
+  color: blueviolet;
+}
+
+/*
+  Class selectors select all elements from a selected class
+  Note that classes
+  are prefixed with a '.'
+
+  Elements can have many classes
+  The declaration can occur many times too
+*/
+.class1 {
+  color: blue;
+}
+
+.class2 {
+  color: red;
+}
+
+.class3 {
+  font-style: italic;
+}
+
+/*
+  IDs can be defined on elements
+  Note that IDs are prefixed with a '#'
+
+  Elements can only have one ID
+*/
+#id1 {
+  color: green;
+}
+
+#id2 {
+  font-style: oblique;
+}
+
+/*
+  Sometimes, certain selectors have many commanalities
+  We can group them together WITH COMMAS, then declare any specificities separately
+
+  This reduced repetitiveness in the code
+*/
+
+.paragraph,
+.paragraph-italicized {
+  font-size: small;
+  background-color: lightblue;
+}
+
+.paragraph {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.paragraph-italicized {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragraph.paragraph-italicized {
+  color: red;
+}
+
+.paragraph.id1 {
+  background-color: blue;
+}
+
+/*
+  Descendant combinators select elements depending on ancesotrs
+
+  Note that there are no commas
+*/
+
+.ancestor .child {
+  color: blue;
+}
+
+/* 
+  If the class is 'four', then if the parent is 'three', then if the parent is
+  'two', then if the parent is 'one', then the style will be applied
+*/
+.one .two .three .four {
+  color: red;
+  background-color: lightcoral;
+}
