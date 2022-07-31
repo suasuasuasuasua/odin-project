@@ -1,3 +1,3 @@
 [submodule "Projects/odin-recipes"]
 	path = Projects/odin-recipes
-	url = git@github.com:suasuasuasuasua/odin-recipes.git
+	url = https://github.com/suasuasuasuasua/odin-recipes
