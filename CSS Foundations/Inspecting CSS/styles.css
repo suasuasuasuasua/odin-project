@@ -1,0 +1,23 @@
+* {
+  padding: 10px;
+  border: 1px solid red;
+  margin: 10px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+ul {
+  display: flex;
+}
+
+img {
+  display: block;
+  margin: auto;
+  justify-content: center;
+}
+
+.test{
+  display: block;
+}
