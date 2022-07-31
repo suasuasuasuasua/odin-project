@@ -1,0 +1,36 @@
+.para,
+.small-para {
+  color: hsl(0, 100%, 50%);
+}
+
+.para {
+  font-size: 22px;
+}
+
+/* Moved small-para after para because font-size was conflicting for the second paragraph */
+.small-para {
+  font-size: 14px;
+}
+
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+}
+
+/* The last div has child and a text parent, we can do descendant combination */
+.text .child {
+  color: red;
+  font-size: 14px;
+}
+
+div.text {
+  color: green;
+  font-size: 22px;
+}
