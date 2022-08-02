@@ -1,6 +1,8 @@
 [submodule "Projects/odin-recipes"]
 	path = Projects/odin-recipes
 	url = git@github.com:suasuasuasuasua/odin-recipes.git
+	branch = main
 [submodule "Projects/odin-landing-page"]
 	path = Projects/odin-landing-page
 	url = git@github.com:suasuasuasuasua/odin-landing-page.git
+	branch = main
