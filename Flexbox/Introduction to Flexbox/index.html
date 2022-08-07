@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Introduction to Flexbox</title>
+  </head>
+  <body>
+    <div>
+      <h1>Introduction to Flexbox</h1>
+      <p>
+        Flexbox is a relatively new technology to HTML that allows us to move
+        elements around on a webpage.
+      </p>
+      <p>
+        When it was first introduced, it was <strong>revolutionary</strong>.
+      </p>
+    </div>
+    <div>
+      <h2>Flex Box</h2>
+      <p>Flexbox is a way to arrange items into rows and columns.</p>
+      <p>
+        The items will grow and shrink, or <em>flex</em>, based on some simple
+        rules we can define.
+      </p>
+      <div class="flex-container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+      <p>
+        The width of these divs depends on 1) how many there are, and 2) how big
+        the viewport is.
+      </p>
+    </div>
+    <div>
+      <h2>Flex Containers</h2>
+      <p>A flex container is any element that has "display: flex" on it</p>
+      <p>Likewise, a flex item is any element that is a child that lives in a flex container.</p>
+      <p>Interestingly, an element can be both a flex container and a flex item at the same time.</p>
+      <div class="container">
+        <div class="item"></div>
+        <div class="container item">
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+        <div class="item"></div>
+      </div>
+    </div>
+  </body>
+</html>
