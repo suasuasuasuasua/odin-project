@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blocks and Inline</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blocks and Inline</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Blocks and Inline</h1>
+
+    <p>Elements can be displayed in two default forms: as blocks or inline.</p>
+    <p>
+      Depending on which display type, the element will have a different box
+      model.
+    </p>
+
+    <div>
+      <h2>Blocks</h2>
+      <div>
+        <p>Most elements that we've covered are block type.</p>
+        <ul>
+          <li>Headers</li>
+          <li>Paragraphs</li>
+        </ul>
+        <p>Blocks appear stacked on one another, from top to bottom</p>
+        <p>
+          Blocks elements always appear on new lines and take up
+          <strong>all</strong> the width of the page.
+        </p>
+      </div>
+      <h3>Divs</h3>
+      <div>
+        <p>
+          Divs are generic containers that are used to organize other elements
+        </p>
+        <p>They have the block display type</p>
+      </div>
+    </div>
+
+    <div>
+      <h2>Inline</h2>
+      <p>Some elements are displayed inline.</p>
+      <ul>
+        <p>Anchors (links)</p>
+        <p></p>
+      </ul>
+      <p>
+        Inline elements continue from the previous, hence why these are called
+        <em>inline</em>.
+      </p>
+      <p>Padding and margin behave differently with inline elements.</p>
+      <h3>Spans</h3>
+      <div>
+        <p>Spans are generic containers for elements, but is an inline element itself.</p>
+      </div>
+    </div>
+  </body>
 </html>
