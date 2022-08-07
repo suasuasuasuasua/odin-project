@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Growing and Shrinking</title>
+  </head>
+  <body>
+    <h1>Growing and Shrinking</h1>
+    <div>
+      <h2>The Flex Shorthand</h2>
+      <p>"flex" is a property that you can give to elements.</p>
+      <p>flex: 0 is shorthand for:</p>
+      <p>Equivalently, we might say "flex 1 1 0"</p>
+      <ul>
+        <li>flex-grow: 1</li>
+        <li>flex-shrink: 1</li>
+        <li>flex-basis: 0</li>
+      </ul>
+      <p>flex: auto is shorthand for:</p>
+      <p>Equivalently, we might say flex 1 1 auto</p>
+      <ul>
+        <li>flex-grow: 1</li>
+        <li>flex-shrink: 1</li>
+        <li>flex-basis: auto</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Flex-Grow</h2>
+      <p>Flex-Grow expects a single number as its value.</p>
+      <p>This is the <em>growth factor</em>.</p>
+      <p>flex: 1 means that each element is going to grow the same amount</p>
+      <p>
+        flex: 2 would tell an element to grow <strong>twice</strong> the size of
+        the other flex elements in the flexbox.
+      </p>
+    </div>
+    <div>
+      <h2>Flex-Shrink</h2>
+      <p>
+        Flex-Shrink is the same idea of Flex-Grow, but sets the shrink factor
+        instead
+      </p>
+      <p>
+        Flex-Shrink only works if the side of the parent flex container is
+        smaller than the width of the combined flex elements.
+      </p>
+      <p>If we don't want an element to shrink, we say flex: 0.</p>
+    </div>
+    <div>
+      <h2>Flex-Basis</h2>
+      <p>Flex-Basis sets the initial size of a flex item</p>
+      <p>Any growing or shrinking starts from that base value</p>
+      <p>
+        flex-basis: auto is a common way to fill it out if we want to respect
+        defined width values
+      </p>
+    </div>
+  </body>
+</html>
